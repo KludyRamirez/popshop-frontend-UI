@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PopShop | Home</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="P.png" type="image/icon type">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">PopShop</a></div>
+        <ul class="links">
+          <li><a href="home2.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <h1 class="lone" onclick="login1()">Log out</h1>
+    </nav>
+  </div>
+  <br><br><br>
+  <div class="titlecon">
+    <br><br><br><br><br><br>
+    <div class="con">
+      <span class="text1">へようこそ</span>
+    </div>
+    <br><br><br>
+    <div class="con1">
+      <span class="text2">Pop with Elegance!</span>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="fbtnd">
+      <input type="button" value="Shop Now!" onclick="home()">
+    </div>
+    <br><br><br><br>
+  </div>
+
+    <div class="imgcon">
+      <div class="imghand">
+      <br>
+      <img src="frames.png" class="frames">
+      
+      <div class="slider">
+      <div class="slides">
+        
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        <div class="slide first">
+          <img src="lolitwice.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="lightsticks.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="ppink.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="bp.jpg" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        
+      </div>
+      
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+    <br>
+    <div class="fbtnd2">
+      <input type="button" value="Shop Now!" onclick="home()">
+    </div>
+    <br><br><br><br>
+    </div>
+    </div>
+    <div class="thircon">
+      <div class="thirdiv">
+        <img src="gicon1.png" class="gicon1">
+        <img src="gicon2.png" class="gicon1">
+        <img src="gicon3.png" class="gicon1">
+        <img src="gicon4.png" class="gicon1">
+      </div>
+    </div>
+    
+    <div class="words">
+      <div class="wordcap">
+        <h1>Bong</h1>
+        <h1>Pop</h1>
+        <h1>Swoosh</h1>
+        <h1>Blob</h1>
+      </div>
+    </div>
+    <br><br><br><br><br>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">(+632) 998 9061</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="home2.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Merchandise</h4>
+            <ul>
+              <li><a href="shop.html">Twice</a></li>
+              <li><a href="shop.html">Enhypen</a></li>
+              <li><a href="shop.html">Treasure</a></li>
+              <li><a href="shop.html">BTS</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kludy.ramirez19"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 1900);
+      </script>
+      <script src="script5.js"></script>
+      
+</body>
+</html>

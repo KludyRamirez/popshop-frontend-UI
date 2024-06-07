@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="P.png" type="image/icon type">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">PopShop</a></div>
+      </div>
+      <img src="btsbg3.png" class="fheart">
+    </nav>
+  </div>
+  <div class="login-page">
+    <br><br>
+    <img src="P.png" class="logosign">
+    
+    <form id="login">
+    <p class="caption">LOG IN</p>
+    <br>
+    <p>Username</p>
+    <input type="text" name="" placeholder="Enter Username">
+    <p>Password</p>
+    <input type="password" name="" placeholder="Enter Password">
+    <br><br>
+    <input onclick="login()" type="button" name="" value="Login">
+    <a class="first" href="#">Create An Account?</a>
+    <br>
+    <a class="fourth" href="#">Forgot Password?</a>
+    </form>
+    <br>
+    <form id="register">
+      <p class="caption">SIGN UP</p>
+      <br>
+      <p>Email</p>
+      <input type="text" name="" placeholder="Enter Email">
+      <p>Username</p>
+      <input type="text" name="" placeholder="Enter Username">
+      <p>Password</p>
+      <input type="password" name="" placeholder="Enter Password">
+      <br>
+      <input onclick="myFunction()" type="button" value="Create">
+      <a class="second" href="#">Already Registered?</a>
+      <br>
+      <a class="sixth" href="#">Forgot Password?</a>
+    </form>
+    
+    <form id="forgot">
+      <p class="caption">CHANGE PASSWORD</p>
+      <br>
+      <p>Email</p>
+      <input type="text" name="" placeholder="Enter Email">
+      <p>New Password</p>
+      <input type="text" name="" placeholder="Enter New Password">
+      <p>Confirm New Password</p>
+      <input type="password" name="" placeholder="Confirm New Password">
+      <br>
+      <input onclick="myPass()" type="button" value="Change">
+      <a class="third" href="#">Create New Account?</a>
+      <br>
+      <a class="fifth" href="#">Log In?</a>
+    </form> 
+    <!-- <div class="logo-page">
+    </div> -->
+</div>
+<script src="script5.js"></script>
+<script src="script7.js"></script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PopShop | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="shop.css" />
+        <link rel="icon" href="P.png" type="image/icon type">
+  <script src="https://kit.fontawesome.com/71df1ee006.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+      <body>
+        <div class="wrapper">
+          <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+            <div class="logo"><a href="#">PopShop</a></div>
+              <ul class="links">
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+        
+                <li><a href="#" onclick="show_hide()" class="cartclick">Cart</a></li>
+              </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+              <input class="myInput" type="text" id="search" placeholder="Search for items" title="Type in a name" required autocomplete="off">
+              <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+          </nav>
+        </div>
+            <br><br><br><br>
+            <div class="container3 content-section" id="cart">
+              <br>
+              <h2 class="section-header">CART</h2>
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-items">
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">$0</span>
+              </div>
+              <button class="btn btn-primary btn-purchase" type="button" onclick="shop()">PURCHASE</button>
+            </div>
+
+            <div class="container1 content-section">
+              <br>
+              <h2 class="section-header">LATEST</h2>
+              <br><br>
+              <div class="shop-items"  id="shop-items">
+                <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">TXT-The Chaos</span>
+                      <img class="shop-item-image" src="1.jpg">
+                          <span class="shop-item-price">$12.99</i></span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">TXT - The Chaos Chapter:<br>FIGHT OR ESCAPE [Huening Kai Set]</div>
+                        <p class="image__description">
+                          Contents:<br>
+                          Folded Mini Poster<br>
+                          2 Sticker Packs<br>
+                          Postcard Photo<br>
+                          AR Card<br>
+                          OS Photo Card<br>
+                          Cut-out Board<br>
+                        </p>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN NI-KI</span>
+                      <img class="shop-item-image" src="4.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - <br>OFFICIAL DECO KIT [NI-KI SET]</div>
+                    <p class="image__description">
+                      Contents<br>
+                      2 Instant Photo<br>
+                      1 Photocard<br>
+                      Sticker Pack<br>
+                      Cutting Sticker<br>
+                      4 cut Photo Set<br>
+                    </p>
+                  </div>
+                  </div>
+              </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN PACKAGE</span>
+                      <img class="shop-item-image" src="5.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE -  <br>OFFICIAL DECO KIT</div>
+                    <p class="image__description">
+                      Inclusions:<br>
+                      Outbox<br>
+                      Ggu Ggu Book: 42p<br>
+                      Notebook: 36p<br>
+                      4 cut photo set: SOLO-7ea / UNIT-2ea<br>
+                      Instant photo set: 14ea<br>
+                      Random bookmark: Random 1ea<br>
+                      Photocare set: 7ea<br>
+                    </p>
+                  </div>
+                  </div>
+              </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN-ASTRO</span>
+                      <img class="shop-item-image" src="7.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">ENHYPEN - ASTRO - TXT <br>PHOTOCARDS</div>
+                    <p class="image__description">
+                      ENHYPEN Heeseung Guitar<br>
+                      ENHYPEN Jay <br>
+                      ENHYPEN Heeseung Curtainv<br>
+                      ENHYPEN Heeseung Suit<br>
+                      ASTRO Rocky<br>
+                      ASTRO MJ<br>
+                    </p>
+                  </div>
+                  </div>
+              </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN HEESEUNG</span>
+                      <img class="shop-item-image" src="9.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - <br>OFFICIAL DECO KIT [HEESEUNG SET]</div>
+                    <p class="image__description">
+                      Contents<br>
+                      2 Instant Photo<br>
+                      Sticker Pack<br>
+                      Cutting Sticker<br>
+                      4 cut Photo Set<br>
+                    </p>
+                  </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          <div class="container2 content-section">
+              <div class="shop-items" id="shop-items">
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN JAKE</span>
+                      <img class="shop-item-image" src="11.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - <br>OFFICIAL DECO KIT [JAKE SET]</div>
+                            <p class="image__description">
+                              Contents<br>
+                              2 Instant Photo<br>
+                              1 Photocard<br>
+                              Sticker Pack<br>
+                              Cutting Sticker<br>
+                              4 cut Photo Set<br>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN JAY</span>
+                      <img class="shop-item-image" src="12.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - <br>OFFICIAL DECO KIT [JAY SET]</div>
+                            <p class="image__description">
+                              Contents<br>
+                              2 Instant Photo<br>
+                              1 Photocard<br>
+                              Sticker Pack<br>
+                              Cutting Sticker<br>
+                              4 cut Photo Set<br>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN JAPAN</span>
+                      <img class="shop-item-image" src="13.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Enhypen Japan 2nd Single 'Dimension: <br>閃光' (Senko) - JAY Jacket VersionInclusions:</div>
+                            <p class="image__description">
+                              Inclusions:
+                              Booklet: 12p<br>
+                              CD-R: 1ea<br>
+                              Photocard 1 random out of 2<br>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">ENHYPEN</span>
+                      <img class="shop-item-image" src="14.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">ENHYPEN PHOTOCARDS</div>
+                            <p class="image__description">
+                              ENHYPEN JAY Jacket<br>
+                              ENHYPEN HEESEUNG hearteu<br>
+                              ENHYPEN JAY King<br>
+                              ENHYPEN JAY Mask<br>
+                              ENHYPEN Group PC<br>
+                              ENHYPEN JAY fierce<br>
+                              ENHYPEN JAY finger heart<br>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="shop-item">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">SEV MINGHAO</span>
+                      <img class="shop-item-image" src="15.jpg">
+                      <span class="shop-item-price">$12.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">SEVENTEEN THE8 (MINGHAO) <br>PHOTOCARD SET</div>
+                            <p class="image__description">
+                              Contents<br>
+                              2 Instant Photo<br>
+                              1 Photocard<br>
+                              Sticker Pack<br>
+                              Cutting Sticker<br>
+                              4 cut Photo Set<br>
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container2 content-section">
+                    <br>
+                    <h2 class="section-header">COMEBACKS</h2>
+                    <br><br>
+                    <div class="shop-items" id="shop-items">
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">SEV SUNOO</span>
+                        <img class="shop-item-image" src="16.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - OFFICIAL DECO KIT [SUNOO SET]</div>
+                              <p class="image__description">
+                                Contents<br>
+                                2 Instant Photo<br>
+                                1 Photocard<br>
+                                Sticker Pack<br>
+                                Cutting Sticker<br>
+                                4 cut Photo Set<br>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">ENHYPEN JUNGWON</span>
+                        <img class="shop-item-image" src="17.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">ENHYPEN - 2022 GGU GGU PACKAGE - OFFICIAL DECO KIT [JUNGWON SET]</div>
+                              <p class="image__description">
+                                Contents<br>
+                                2 Instant Photo<br>
+                                1 Photocard<br>
+                                Sticker Pack<br>
+                                Cutting Sticker<br>
+                                4 cut Photo Set<br>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">TXT ALBUM</span>
+                        <img class="shop-item-image" src="18.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">TREASURE - Single Album Vol.1 <BR>[THE FIRST STEP : CHAPTER ONE]</div>
+                              <p class="image__description">
+                                INCLUSIONS:<br>
+                                Photobook (150p)<br>
+                                Disc<br>
+                                Photocard (random 2 out of 24)<br>
+                                Selfie Photocard (random 1 out of 12)<br>
+                                Hologram Postcard (random 1 out of 12)<br>
+                                Sticker (1pc)<br>
+                                Optical Bookmark (1pc)<br>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">NCT #127 Neo Zone</span>
+                        <img class="shop-item-image" src="19.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">NCT #127 Neo Zone: The Final Round - <br>The 2nd Album Repackage</div>
+                              <p class="image__description">
+                                CONTENTS:
+                                COVER - 2 versions / 1ea<br>
+                                BOOKLET - 2 versions / 1ea / 88p<br>
+                                POSTCARD - Random 1 out of 9<br>
+                                FOLDING POSTER - 2 versions /1ea<br>
+                                PHOTO CARD - 2 versions /<br>
+                                Random 1 out of 9 CIRCLE CARD -<br> 
+                                2 versions / Random 1 out of 9<br>
+                                + TAEYONG PHOTOCARD<br>
+                              </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">BTS ARMY BOMB</span>
+                        <img class="shop-item-image" src="20.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">BTS ARMY BOMB: MAP OF THE SOUL SPECIAL EDITION</div>
+                              <p class="image__description">
+                                Package Contents:
+                                1x Light Stick (does not include batteries)<br>
+                                7x Photocards<br>
+                                1x Lightstick dust bag<br>
+                                1x Wristband strap<br>
+                                Instruction Manual<br>
+                              </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container2 content-section">
+                    <div class="shop-items" id="shop-items">
+                    <div class="shop-item">
+                      <div class="shop-item-details">
+                        <span class="shop-item-title">TXT LIGHTSTICK</span>
+                        <img class="shop-item-image" src="21.jpg">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                          <div class="image__overlay image__overlay--primary">
+                            <div class="image__title">TREASURE - Official <br>LightstickYG Entertainment</div>
+                              <p class="image__description">
+                                Inclusions:<br>
+                                1 Lightstick<br>
+                                1 Strap<br>
+                                1 Quick Start Guide<br> 
+                                and Quality Assurance<br>
+                                NO Batteries Included<br>
+                                (AAA 3ea)<br>
+                              </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="shop-item">
+                        <div class="shop-item-details">
+                          <span class="shop-item-title">TXT : JAPAN 1ST</span>
+                          <img class="shop-item-image" src="22.jpg">
+                          <span class="shop-item-price">$12.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            <div class="image__overlay image__overlay--primary">
+                              <div class="image__title">TREASURE : JAPAN DEBUT ALBUM <br>THE FIRST STEP : TREASURE EFFECT</div>
+                                <p class="image__description">
+                                  (CD + Acrylic Stand)<br>
+                                  
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="shop-item">
+                        <div class="shop-item-details">
+                          <span class="shop-item-title">BTS MERCH</span>
+                          <img class="shop-item-image" src="23.jpg">
+                          <span class="shop-item-price">$12.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            <div class="image__overlay image__overlay--primary">
+                              <div class="image__title">BTS MERCH</div>
+                                <p class="image__description">
+                                  BTS DYNAMITE VINYL<br>
+                                  BTS DYNAMITE CASSETTE<br>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="shop-item">
+                        <div class="shop-item-details">
+                          <span class="shop-item-title">BTS - BE</span>
+                          <img class="shop-item-image" src="24.jpg">
+                          <span class="shop-item-price">$12.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            <div class="image__overlay image__overlay--primary">
+                              <div class="image__title">BTS - BE (DELUXE EDITION)</div>
+                                <p class="image__description">
+                                  INCLUSIONS:<br>
+                                  Photobook (100 p)<br>
+                                  Making Book (32 p)<br>
+                                  CD (1 ea)<br>
+                                  Lyric Poster (1 ea)<br>
+                                  Photocard (8 ea)<br>
+                                  Polaroid Photocard (1 ea)<br>
+                                  Photo Frame (1 ea)<br>
+                                  Postcard (7 ea)<br>
+                                  Folded Poster (1 ea)<br>
+                                  + BTS beWATER<br>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="shop-item">
+                        <div class="shop-item-details">
+                          <span class="shop-item-title">BLACKPINK</span>
+                          <img class="shop-item-image" src="25.jpg">
+                          <span class="shop-item-price">$12.99</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            <div class="image__overlay image__overlay--primary">
+                              <div class="image__title">BLACKPINK OFFICIAL <br>LIGHTSTICK VERSION 1</div>
+                                <p class="image__description">
+                                  INCLUSIONS :<br>
+                                - Outbox (1 ea)<br>
+                                - Lightstick (1 ea)<br>
+                                - Manual (1 ea)<br>
+                                - Strap (1 ea)<br>
+                                - Stand (1 ea)<br>
+                                </p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <br><br><br><br><br>
+                <footer class="footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                          <li><a href="#">Contacts</a></li>
+                          <li><a href="#">(+632) 998 9061</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <ul>
+                          <li><a href="shop.html">Shop</a></li>
+                          <li><a href="home2.html">Home</a></li>
+                          <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>Merchandise</h4>
+                        <ul>
+                          <li><a href="shop.html">Twice</a></li>
+                          <li><a href="shop.html">Enhypen</a></li>
+                          <li><a href="shop.html">Treasure</a></li>
+                          <li><a href="shop.html">BTS</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                          <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                          <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                          <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </footer>
+                    <script src="script.js"></script>
+                    <script src="script1.js"></script>
+                    <script src="script2.js"></script>
+                    <script src="script5.js"></script>
+  </body>
+</html>
